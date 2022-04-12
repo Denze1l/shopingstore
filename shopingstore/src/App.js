@@ -1,18 +1,22 @@
 import "./App.css";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-// This is master branch, second try
+
+import { actions } from "./store/index";
+
 function App() {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
   const inc = () => {
-    dispatch({ type: "INC" });
+    // dispatch(actions.increment());
+    console.log(actions.increment());
   };
   const dec = () => {
-    dispatch({ type: "DEC" });
+    dispatch(actions.decrement());
   };
   const biginc = () => {
     let bigPlus = 10;
-    dispatch({ type: "BIGINC", bigPlus });
+    dispatch(actions.addBy(10));
   };
   return (
     <div>
