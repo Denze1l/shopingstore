@@ -1,6 +1,6 @@
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
-
+// This is master branch, second try
 function App() {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
