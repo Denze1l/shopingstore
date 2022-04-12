@@ -5,7 +5,6 @@ import { actions } from "./store/index";
 
 // pupa check
 /// It is my origin branch with commit
-// before switching
 function App() {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
